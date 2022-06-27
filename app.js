@@ -1,8 +1,10 @@
 const http = require('http')
 
-http.createServer((req, res) => {
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-	res.end('hello')
-}).listen(8081, () => console.log('listening to port 8081'));
+const server = http.createServer((req, res) => {
+	console.log('req incoming')
+	res.statusCode = 200
+	res.setHeader('Content-Type', 'text/plain')
+	res.end('Hello World');
+})
 
-console.log('hello1234')
+server.listen(8081, () => console.log('server running'))
