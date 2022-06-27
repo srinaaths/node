@@ -1,0 +1,28 @@
+const addNums = require('./addNums')
+
+create file addNums
+
+module.exports = function addNums(a, b) {
+	...
+}
+
+ES6 modules are different
+
+import {addNums} from './addNums.js'
+
+make changes in the package.json
+as type: module
+
+actual web server:
+
+http createServer
+statusCode, setHeader
+.listen, ...
+
+const PORT = process.env.PORT || 3000;
+res.setHeader('Content-Type', 'text/html');
+res.end('<h1>hello world</h1>');
+
+req.url, req.method
+
+Routing using req.url - switch case
