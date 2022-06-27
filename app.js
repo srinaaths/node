@@ -6,4 +6,4 @@ const server = http.createServer((req, res) => {
 	res.end('hello')
 })
 
-server.listen(8081, () => console.log('hello'));
+server.listen(8081, () => console.log('listening to port'));
